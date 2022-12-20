@@ -11,7 +11,7 @@ app.use(cors())
 app.get('/', (req, res) =>{
     res.json({
         status: "1",
-        msg: "Hola mundo de Manejo e Implementacion de Archivos VACAS 2022"
+        msg: "201904013 - MARLON ISAÍ FIGUEROA FARFÁN"
     })
 })
 

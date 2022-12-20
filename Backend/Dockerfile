@@ -8,10 +8,10 @@ EXPOSE 3000
 CMD [ "npm", "start" ]
 
 ### CREAR LA IMAGEN LOCALMENTE
-### docker build --tag diians2302/backend-mia .
+### docker build --tag ifigueroa065/backend-prueba .
 
 ### CORRER LA IMAGEN
-### docker run -d --name=backend-mia -p 3000:3000 diians2302/backend-mia
+### docker run -d --name=backend-mia -p 3000:3000 ifigueroa065/backend-prueba
 
 ### SUBIR LA IMAGEN A DOCKER HUB
-### docker push diians2302/backend-mia
+### docker push ifigueroa065/backend-prueba
