@@ -4,7 +4,7 @@ const usuarios = {
     2: "usuario2",
     3: "usuario3",
     4: "usuario4",
-    5: "Diego Obin",
+    5: "Isaí Figueroa",
     6: "usuario6",
     7: "usuario7",
     8: "usuario8",
