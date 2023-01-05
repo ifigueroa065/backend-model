@@ -31,6 +31,8 @@ router.post('/getUser',[
     usuariosController.getUser
 )
 
+
+
 const usuarios = {
     1: "usuario1",
     2: "usuario2",
@@ -44,7 +46,7 @@ const usuarios = {
     10: "usuario10"
 }
 
-router.get('/getUser2/:id', (req, res) => {
+router.get('/buscar-usuario/:id', (req, res) => {
     const { id } = req.params;
     const user = usuarios[id];
     if (user) {

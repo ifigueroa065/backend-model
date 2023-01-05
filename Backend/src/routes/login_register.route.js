@@ -4,13 +4,13 @@ const validateAtibutes = require('../middleware/validateAtibutes');
 require('dotenv').config(); // Recibe las variables de entorno
 
 const router = Router();
-const usuariosController = require('../controllers/usuarios.controller');
+const loginController = require('../controllers/login_register.controller');
 
 // Ruta principal
 router.get('/', (req, res) => {
     res.json({
         status: "1",
-        msg: "Estamos en la api de usuarios"
+        msg: "Estamos en la api de login"
     });
 });
 
@@ -22,5 +22,7 @@ router.post('/register', [
     check('foto', 'La foto es obligatoria').not().isEmpty(),
     check('password', 'El password es obligatorio').not().isEmpty(),
     validateAtibutes],
-    usuariosController.register
+    loginController.register
 );
+
+module.exports = router;
